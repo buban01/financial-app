@@ -4,11 +4,11 @@ metadata:
   name: app-config
 data:
   DB_HOST: "mysql"
-  DB_USER: "user"
-  DB_PASS: "pass"
+  DB_USER: "root"
+  DB_PASS: ""
   DB_NAME: "financial_db"
   SMTP_SERVER: "smtp.example.com"
   SMTP_PORT: "587"
-  SMTP_USER: "user@example.com"
-  SMTP_PASS: "your-smtp-password"
-  SECRET_KEY: "your-secret-key"
+  SMTP_USER: "bubansome@gmail.com"
+  SMTP_PASS: "80176366Ps*"
+  SECRET_KEY: "cd3aba00b33c86f38c681cf088d4e92c57158b00717df598c73fafc4c6c51120"

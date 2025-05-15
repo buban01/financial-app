@@ -13,8 +13,8 @@ spec:
         app: financial-app
     spec:
       containers:
-      - name: app
-        image: myrepo/financial-app:latest
+      - name: financial-app
+        image: buban123/financial-app:latest
         envFrom:
         - configMapRef:
             name: app-config
