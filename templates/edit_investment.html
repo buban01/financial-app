@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Edit Investment</h1>
+<form method="post">
+  <div class="mb-3">
+    <select name="client_id" class="form-select" required>
+      {% for c in clients %}
+      <option value="{{ c.id }}" {% if inv.client_id==c.id %}selected{% endif %}>{{ c.name }}</option>{% endfor %}
+    </select>
+  </div>
+  <div class="mb-3">
+    <select name="fund_id" class="form-select" required>
+      {% for f in funds %}
+      <option value="{{ f.id }}" {% if inv.fund_id==f.id %}selected{% endif %}>{{ f.name }}</option>{% endfor %}
+    </select>
+  </div>
+  <div class="mb-3"><input name="units" type="number" step="0.01" class="form-control" value="{{ inv.units }}" required></div>
+  <div class="mb-3"><input name="purchase_nav" type="number" step="0.01" class="form-control" value="{{ inv.purchase_nav }}" required></div>
+  <button class="btn btn-primary">Save</button>
+</form>
+{% endblock %}

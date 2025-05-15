@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  DB_HOST: "mysql"
+  DB_USER: "user"
+  DB_PASS: "pass"
+  DB_NAME: "financial_db"
+  SMTP_SERVER: "smtp.example.com"
+  SMTP_PORT: "587"
+  SMTP_USER: "user@example.com"
+  SMTP_PASS: "your-smtp-password"
+  SECRET_KEY: "your-secret-key"

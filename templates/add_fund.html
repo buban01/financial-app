@@ -1,0 +1,28 @@
+<!-- templates/add_fund.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Add New Mutual Fund</h2>
+  <form method="POST" action="{{ url_for('add_fund') }}">
+    <div class="mb-3">
+      
+      <input name ="name"  type="text" class="form-control" id="name" placeholder="Fund Name" required>
+    </div>
+    <div class="mb-3">
+      <input name="type" class="form-control" placeholder="Fund Type" required>
+    </div>
+
+    <!--<div class="mb-3">
+      <label for="scheme_code" class="form-label">Scheme Code</label>
+      <input type="text" class="form-control" id="scheme_code" name="scheme_code" required>
+    </div>
+    <div class="mb-3">
+      <label for="isin" class="form-label">ISIN (Optional)</label>
+      <input type="text" class="form-control" id="isin" name="isin">
+    </div>-->
+    <button type="submit" class="btn btn-primary">Add Fund</button>
+    <a href="/" class="btn btn-secondary">Back</a>
+  </form>
+</div>
+{% endblock %}

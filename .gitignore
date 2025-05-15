@@ -1,0 +1,48 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+*.env
+
+# Logs
+*.log
+
+# Docker
+*.pid
+*.tar
+*.bak
+*.tmp
+.dockerignore
+
+# Byte-compiled files
+*.pyo
+*.pyd
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# MySQL dump
+*.sql
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+venv/
+env/
+ENV/

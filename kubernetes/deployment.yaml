@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: financial-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: financial-app
+  template:
+    metadata:
+      labels:
+        app: financial-app
+    spec:
+      containers:
+      - name: app
+        image: myrepo/financial-app:latest
+        envFrom:
+        - configMapRef:
+            name: app-config
+        ports:
+        - containerPort: 5000
